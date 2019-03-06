@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <script src="js/main.js"></script>
+    <!-- Main css -->
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+    body{
+        background-image: url("images/signup-bg.jpg");
+        background-size: cover;
+        text-align: center;
+        height: 100vh;
+        overflow-y: hidden;
+        font-family: 'Signika', sans-serif;
+    }
+    .signup{
+        padding-top: 10%;
+        padding-left: 30%;
+        padding-right: 30%;
+    }
+   
+    .form-control{
+            border: 1px solid #ced4dab3;
+            height:50px;
+    }
+    .form-control:focus {
+        border-color: linear-gradient(to left, #74ebd5, #9face6);;
+        box-shadow: 0px 0px 1px 1px #9face6;
+    }
+    
+    .form-submit {
+        background-image: linear-gradient(to left, #74ebd5, #9face6);
+    }
+    .input-group-addon{width: 10%;text-align: center;padding:3% 1% 1% 1%;color: #000;background-color: #343a409c;}
+    @media (max-width: 992px) {
+     .signup{
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <div class="main" >
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container jumbotron" style="background-color: #fff;">
+                <div class="signup-content">
+                    <form method="POST" action="/signin" id="signup-form" class="signup-form">
+                        <h2 class="form-title">Login</h2>
+                        
+                        <div class="form-group" style="padding-top: 2%;">
+                            <input class="form-control" type="email" class="form-input" name="email" id="email" placeholder="Email"/>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                    
+                                 <input class="form-control" type="password" class="form-input" name="password" id="password" placeholder="Password"/>
+                                     <div class="input-group-addon">
+                                 <a href="#" onclick="myFunction()" style="color: #fff;"><i class="fa fa-eye" aria-hidden="true"></i></a>
+                                </div>
+                                </div>
+                           
+                        </div>
+                       
+                        
+                        <div class="form-group" style="padding-top: 2%;">
+                            <input class="form-control" type="submit" name="submit" id="submit" class="form-submit" value="Login" style="background-image: linear-gradient(to left, #74ebd5, #9face6);"/>
+                        </div>
+                        <div style="text-align: center;color: Tomato;">
+                            <span><%= message%></span>
+                        </div>
+                    </form>
+                    
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+   
+    <script src=""></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
